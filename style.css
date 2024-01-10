@@ -292,7 +292,7 @@ header .menu__btn {
 
     .slider {
         width: 100vw;
-        margin: 0px 0px 10px 0px;
+        margin: -70px 0px 10px 0px;
         padding: 0px 0px 70% 0px;
         overflow: hidden;
         position: relative;
