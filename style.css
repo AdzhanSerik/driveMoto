@@ -43,7 +43,7 @@ nav {
 }
 
 nav a {
-    flex: 1 0 150px;
+    flex: 1 0 180px;
 }
 
 nav a,
@@ -170,7 +170,6 @@ nav a,
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
-    /* gap: 00px; */
 }
 
 .tovar a {
@@ -252,8 +251,6 @@ header .menu__btn {
         justify-self: start;
     }
 
-
-
     .map {
         display: none;
     }
@@ -267,17 +264,16 @@ header .menu__btn {
     }
 
     .navs {
-        gap: 20px;
         overflow-x: auto;
+        gap: 20px;
     }
-
 
 
 }
 
-@media(max-width: 440px) {
+@media (max-width: 440px) {
     .logo h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .container {
@@ -287,17 +283,15 @@ header .menu__btn {
     .content__1 {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
 
     .slider {
         width: 100vw;
-        margin: -40px 0px 10px 0px;
+        margin: -70px 0px 10px 0px;
         padding: 0px 0px 70% 0px;
         overflow: hidden;
         position: relative;
     }
-
 
     .slider img {
         width: 100%;
@@ -308,122 +302,3 @@ header .menu__btn {
         left: 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Стили для бургера */
-
-header a {
-    /* background-color: aliceblue; */
-    display: block;
-    width: 25px;
-    height: 50px;
-    border-radius: 50%;
-    position: relative;
-}
-
-header a span,
-header a span::before,
-header a span::after {
-    position: absolute;
-    background-color: black;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 2px;
-    margin-top: -1px;
-    margin-left: -10px;
-    border-radius: 20px;
-}
-
-header a span::before,
-header a span::after {
-    content: '';
-    transition: .2s;
-}
-
-header a span::before {
-    transform: translateY(-5px);
-}
-
-header a span::after {
-    transform: translateY(5px);
-}
-
-header .active span::before {
-    transform: rotate(-45deg);
-}
-
-header .active span::after {
-    transform: rotate(45deg);
-
-}
-
-header .active span {
-    height: 0;
-}
-
-/* Конец стилей для бургера */
